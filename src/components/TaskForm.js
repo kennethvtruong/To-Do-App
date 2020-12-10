@@ -1,12 +1,12 @@
 import React from 'react';
 
-export function TodoForm({ addToDo }) {
+export function TaskForm({ addTask }) {
     const [value, setValue] = React.useState("");
   
     const handleSubmit = e => {
       e.preventDefault();
       if(!value) return;
-      addToDo(value);
+      addTask(value);
       setValue("")
     };
   

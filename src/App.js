@@ -1,46 +1,46 @@
 import './App.css';
 import React from 'react';
-import { Todo } from './components/Todo.js'
-import { TodoForm } from './components/TodoForm.js'
+import { Task } from './components/Task.js'
+import { TaskForm } from './components/TaskForm.js'
 
 
 function App() {
-  const [toDo, setToDos] = React.useState([
+  const [tasks, setTasks] = React.useState([
     {text: "Start To-Do List",
     isCompleted: false}
 
   ]);
 
-  const addToDo = text => {
-    const newTodos = [...toDo, { text }];
-    setToDos(newTodos);
+  const addTask = text => {
+    const newTasks = [...tasks, { text }];
+    setTasks(newTasks);
   };
 
-  const completeTodo =  index => {
-    const newTodos = [...toDo];
-    newTodos[index].isCompleted = true;
-    setToDos(newTodos)
+  const completeTask =  index => {
+    const newTasks = [...tasks];
+    newTasks[index].isCompleted = true;
+    setTasks(newTasks)
   };
 
-  const removeTodo = index => {
-    const newTodos = [...toDo];
-    newTodos.splice(index, 1);
-    setToDos(newTodos)
+  const removeTask = index => {
+    const newTasks = [...tasks];
+    newTasks.splice(index, 1);
+    setTasks(newTasks)
   }; 
 
   return (
     <div className="app">
-      <div className="toDo-list">
-        {toDo.map((toDo, index) => (
-          <Todo 
+      <div className="todo-list">
+        {tasks.map((tasks, index) => (
+          <Task 
             key={index}
             index={index}
-            toDo={toDo}
-            completeTodo={completeTodo}
-            removeTodo={removeTodo}
+            tasks={tasks}
+            completeTask={completeTask}
+            removeTask={removeTask}
             />
         ))}
-        <TodoForm addToDo={addToDo} />
+        <TaskForm addTask={addTask} />
       </div>
     </div>
   );
