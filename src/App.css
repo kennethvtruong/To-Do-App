@@ -3,13 +3,13 @@
   height: 100vh;
   padding: 30px;
 }
-.todo-list {
+.newTasks {
   background: #e8e8e8;
   border-radius: 4px;
   max-width: 400px;
   padding: 5px;
 }
-.toDo {
+.tasks {
   align-items: center;
   background: #fff;
   border-radius: 3px;

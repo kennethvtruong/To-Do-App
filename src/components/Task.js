@@ -14,4 +14,4 @@ function Task({ tasks, index, completeTask, removeTask }) {
     )
   }
 
-  export default Task;
+ export default Task;

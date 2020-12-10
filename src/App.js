@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
-import { Task } from './components/Task.js'
-import { TaskForm } from './components/TaskForm.js'
+import Task from './components/Task.js'
+import TaskForm from './components/TaskForm.js'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     setTasks(newTasks);
   };
 
-  const completeTask =  index => {
+  const completeTask = index => {
     const newTasks = [...tasks];
     newTasks[index].isCompleted = true;
     setTasks(newTasks)
