@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Task({ tasks, index, completeTask, removeTask }) {
+function Task({ tasks, index, completeTask, removeTask }) {
     return (
       <div 
         className="tasks"
@@ -13,3 +13,5 @@ export function Task({ tasks, index, completeTask, removeTask }) {
         </div>
     )
   }
+
+  export default Task;

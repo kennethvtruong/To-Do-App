@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function TaskForm({ addTask }) {
+function TaskForm({ addTask }) {
     const [value, setValue] = React.useState("");
   
     const handleSubmit = e => {
@@ -21,3 +21,5 @@ export function TaskForm({ addTask }) {
       </form>
     )
   }
+
+  export default TaskForm;
