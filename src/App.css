@@ -3,6 +3,10 @@
   height: 100vh;
   padding: 30px;
 }
+h2 {
+  align-items: center;
+  color:#e8e8e8;
+}
 .newTasks {
   background: #e8e8e8;
   border-radius: 4px;

@@ -3,13 +3,16 @@ import React from 'react';
 import Task from './components/Task.js'
 import TaskForm from './components/TaskForm.js'
 
-
 function App() {
   const [tasks, setTasks] = React.useState([
     {text: "Start To-Do List",
-    isCompleted: false}
-
+    isCompleted: false,
+    }
   ]);
+
+  const [count, setCount] = React.useState(0)
+
+  const [date, setDate] = React.useState(new Date());
 
   const addTask = text => {
     const newTasks = [...tasks, { text }];
@@ -28,8 +31,12 @@ function App() {
     setTasks(newTasks)
   }; 
 
+
+
   return (
     <div className="app">
+      <h2>{date.toLocaleDateString()}</h2>
+      <h2>Tasks Completed: {count}</h2>
       <div className="todo-list">
         {tasks.map((tasks, index) => (
           <Task 
@@ -38,6 +45,8 @@ function App() {
             tasks={tasks}
             completeTask={completeTask}
             removeTask={removeTask}
+            count={count}
+            setCount={setCount}
             />
         ))}
         <TaskForm addTask={addTask} />
