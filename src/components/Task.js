@@ -15,7 +15,6 @@ function Task({ tasks, index, completeTask, removeTask, count, setCount}) {
           dragConstraints={{top: 0, bottom: 0 }}
           dragElastic={1}
           whileHover={{ scale: 1.03}}
-
           layout
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

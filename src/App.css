@@ -1,7 +1,5 @@
 .app {
   background: linear-gradient(250deg, #5a08df, #1a7497);
-  height: 300vh;
-  height: cover;
   padding: 30px;
 }
 #completeButton {
@@ -25,11 +23,13 @@ h2 {
   align-items: center;
   color:#e8e8e8;
 }
-.newTasks {
-  background: #e8e8e8;
+.todo-list {
+  height: 100vh;
+  overflow: hidden;
   border-radius: 4px;
   max-width: 400px;
   padding: 5px;
+  margin: auto;
 }
 .tasks {
   align-items: center;
@@ -40,5 +40,5 @@ h2 {
   font-size:20px;
   justify-content: space-between;
   margin-bottom: 6px;
-  padding: 3px 10px
+  padding: 3px 10px;
 }
