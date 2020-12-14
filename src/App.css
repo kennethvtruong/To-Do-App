@@ -1,7 +1,24 @@
 .app {
-  background: #378ac2;
+  background: linear-gradient(250deg, #5a08df, #1a7497);
   height: 100vh;
   padding: 30px;
+}
+#completeButton {
+  background-color: rgb(92, 154, 182);
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.1s;
+}
+#completeButton:hover {
+  background-color: white;
+}
+#deleteButton {
+  background-color: rgb(92, 154, 182);
+  font-size: 16px;
+  border-radius: 12px;
+}
+#deleteButton:hover {
+  background-color: white;
 }
 h2 {
   align-items: center;
@@ -16,7 +33,7 @@ h2 {
 .tasks {
   align-items: center;
   background: #fff;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
   display: flex;
   font-size:20px;

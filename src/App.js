@@ -1,5 +1,6 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { motion, AnimateSharedLayout, useMotionValue } from "framer-motion";
 import Task from './components/Task.js'
 import TaskForm from './components/TaskForm.js'
 
@@ -31,11 +32,13 @@ function App() {
     setTasks(newTasks)
   }; 
 
+  
   return (
     <div className="app">
       <h2>{date.toLocaleDateString()}</h2>
       <h2>Tasks Completed: {count}</h2>
       <div className="todo-list">
+      <AnimateSharedLayout type="crossfade">
         {tasks.map((tasks, index) => (
           <Task 
             key={index}
@@ -50,6 +53,7 @@ function App() {
         <TaskForm 
           addTask={addTask} 
         />
+        </AnimateSharedLayout>
       </div>
     </div>
   );

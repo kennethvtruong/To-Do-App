@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TaskForm({ addTask, disabled, setDisabled }) {
+function TaskForm({ addTask }) {
     const [value, setValue] = React.useState("");
   
     const handleSubmit = e => {
