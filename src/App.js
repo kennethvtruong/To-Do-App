@@ -1,6 +1,6 @@
 import './App.css';
-import React, { useEffect } from 'react';
-import { motion, AnimateSharedLayout, useMotionValue } from "framer-motion";
+import React from 'react';
+import { AnimateSharedLayout } from "framer-motion";
 import Task from './components/Task.js'
 import TaskForm from './components/TaskForm.js'
 

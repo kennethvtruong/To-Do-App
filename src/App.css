@@ -1,6 +1,6 @@
 .app {
   background: linear-gradient(250deg, #5a08df, #1a7497);
-  height: 100vh;
+  height: cover;
   padding: 30px;
 }
 #completeButton {
