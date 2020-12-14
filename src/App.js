@@ -31,8 +31,6 @@ function App() {
     setTasks(newTasks)
   }; 
 
-
-
   return (
     <div className="app">
       <h2>{date.toLocaleDateString()}</h2>
@@ -49,7 +47,9 @@ function App() {
             setCount={setCount}
             />
         ))}
-        <TaskForm addTask={addTask} />
+        <TaskForm 
+          addTask={addTask} 
+        />
       </div>
     </div>
   );
