@@ -16,7 +16,6 @@ function Task({ tasks, index, completeTask, removeTask, count, setCount}) {
           dragConstraints={{top: 0, bottom: 0 }}
           dragElastic={1}
           whileHover={{ scale: 1.03}}
-          whileTap={{ scale: 1.12}}
           layout
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -32,8 +31,8 @@ function Task({ tasks, index, completeTask, removeTask, count, setCount}) {
               <motion.button 
               id="completeButton"
               whileHover={{
-                scale: 1.2,
-                transition: { duration: 1 },
+                scale: 1.05,
+                transition: { duration: 0.2 },
               }}
               whileTap={{ scale: 0.9 }}
               onClick={handleClick} 
@@ -41,8 +40,8 @@ function Task({ tasks, index, completeTask, removeTask, count, setCount}) {
               <motion.button 
                 id="deleteButton"
                 whileHover={{
-                  scale: 1.2,
-                  transition: { duration: 1 },
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
                 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => removeTask(index)}>Delete</motion.button>
